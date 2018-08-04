@@ -1,13 +1,7 @@
 # Semantic
-I think human can't go out of earth and go into space without AI ,so only combination can help up develop into AI , the true AI.  
-## servlet
-### rule inference API
+## Abstract
+With the development of e-commerce, more and more people browse, collect, purchase, and publish their reviews through the e-commerce websites. The ocean of product reviews can be used to mine user command to guide producter design his product and marketing plan. This paper chooses AliExpress as the research object, and excavates Aliexpress's review data through the construction and reasoning of the knowledge graph.
 
-## thread
-### entity recognition
-### relation extraction
-### knowledge development
-### link predict
+In order to build knowledge graph of the AliExpress’s review, first we use the crawler to collect data according to AliExpress's second category, and store the text data in a relational database; secondly, we use the CoreNLP provided by Stanford University to name the text data for entity recognition and extract their entity relationship, and form a triple structure data; then we use the data set of Probase provided by Microsoft Asia Research Institute(MSRA) to identify the entity relationship type of the triplet data; and finally we build the reasoning semantic layer by a three-group and triple relationship type.
 
-## entity
-### 
+When obtained the AliExpress review knowledge graph, it is necessary to predict link and complete the the knowledge graph. Because the triplet data is discrete and network-based, it is difficult to data mining, so it needs to be converted into a computable, continuous, distributed triad vector. Firstly, we use the TransE model to train the triple data and obtain the distributed triples vector. Then we use the TransE model to calculate the Euclidean distance between entities in the knowledge map to predict the entity relationship, and then determine the possible entity relationships, and then complete the  knowledge graph.
